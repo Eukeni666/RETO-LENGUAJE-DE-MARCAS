@@ -1,0 +1,31 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+h1 {text-align: center;}
+
+h3 {text-align: center;}
+
+legend {color: rgb(30, 101, 214);}
+
+.wiki {font-weight: bold;
+font-size: larger;
+background-color: white;}
+
+.mikeldi {font-size: smaller;}
+
+.W {text-decoration: line-through;
+    font-style: italic;
+    color: grey;}
+
+.M {color: rgb(30, 101, 214);}
+
+.tablaDatosHeader {text-decoration: underline;
+padding-bottom: 12px;}
+
+.tablaDatos {padding-top: 7px;
+padding-bottom: 7px;}
+
+.footer {
+    font-style: italic;
+    font-size: 12px;
+    text-align: center;
+}
