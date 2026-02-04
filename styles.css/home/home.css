@@ -50,7 +50,7 @@
     border-radius: 2.5rem;
 }
 
-.buscar_boton {
+.menu_modal {
     all:unset;
     display: flex;
     justify-content: center;
