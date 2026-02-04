@@ -9,32 +9,29 @@
 <body>
 
     <!-- ENCABEZADO -->
-     <header class="menu">
+    <header class="menu">
         <nav class="menu_contenido_listas">
-            <div class="menu_asignaturas">
-                <p class="menu--desplegar">Asignaturas</p>
-                <ul class="menu--mostrar">
-                    <li>Ingles</li>
-                    <li>Programación</li>
-                    <li>Digitalización</li>
-                    <li>Sostenibilidad</li>
-                    <li>Entornos de desarrollo</li>
-                    <li>Lenguajes de marcas</li>
-                </ul>
-            </div>
-            <div class="menu_fp">
-                <p class="menu--desplegar desplegar_modificador">Programa</p>
-                <ul class="menu--mostrar">
-                    <li>DAM</li>
-                    <li>Relaciones Internacionales</li>
-                </ul>
-            </div>
+            <p class="menu_desplegar_asignatura menu_mostrar">Asignaturas</p>
+            <ul >
+                <li>Ingles</li>
+                <li>Programación</li>
+                <li>Digitalización</li>
+                <li>Sostenibilidad</li>
+                <li>Entornos de desarrollo</li>
+                <li>Lenguajes de marcas</li>
+            </ul>
+
+            <p class="menu_desplegar_cursos">Programa</p>
+            <ul class="menu_mostrar">
+                <li>DAM</li>
+                <li>Relaciones Internacionales</li>
+            </ul>
             
             <button class="menu_modal" type="button">Buscar</button>
             <button class="menu_modal" type="button">Acceder</button>
         </nav>
      </header>
-
+<!--  
     <table style="width: 100%; ">
         <tr>
             <td rowspan="2" class="tdEncabezado" style="width: 16%;"> 
@@ -54,15 +51,15 @@
     
     <h1> Welcome to <span class="W">W</span><span class="M">M</span>ikiApuntes.com </h1>
     <h3> <span class="W"> your</span><span class="M"> Mikeldi students </span> source for reliable classnotes </h3>
-
+ -->
     <!-- IMAGEN -->
 
-    <img src="img/students/students2.png" width="100%">
-    <br/>
+<!--     <img src="img/students/students2.png" width="100%">
+    <br/> -->
 
     <!-- TABLA UPLOAD / SEARCH -->
 
-    <table border="px" style="width: 100%;">
+<!--     <table border="px" style="width: 100%;">
         <tr>
             <td class="tdUploadSearch" style="width: 50%;"><a href="1upload.html">
                     <center> UPLOAD 
@@ -70,14 +67,13 @@
             </td>
             <td class="tdUploadSearch" style="width: 50%;"><a href="2search.html"><center> SEARCH </a><br/> for classnotes </center></td>
         </tr>
-    </table>
+    </table> -->
 
     
     <!-- FOOTER -->
 
-    <p class="footer"> WikiApuntes® and Mikiapuntes® are trademarks of MrK Entertainment. All rights reserved. ©2026 </p>
-    <br/>
+    <!-- <p class="footer"> WikiApuntes® and Mikiapuntes® are trademarks of MrK Entertainment. All rights reserved. ©2026 </p>
+    <br/> -->
 
 </body>
-
 </html>
