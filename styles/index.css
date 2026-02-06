@@ -1,0 +1,27 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+h1 {text-align: center;}
+
+h3 {text-align: center;}
+
+.tdEncabezado {padding-top: 3px;
+padding-left: 0px;
+padding-bottom: 0px;
+text-align: left;}
+
+.tdSuperiorMenu {font-style: italic;
+text-align: center;}
+
+.W {text-decoration: line-through;
+    font-style: italic;
+    color: grey;}
+
+.M {color: rgb(30, 101, 214);}
+
+.tdUploadSearch {padding: 13px;
+    font-weight: bold;
+    font-size: large;}
+
+.footer {font-style: italic;
+    font-size: 12px;
+    text-align: center;}
