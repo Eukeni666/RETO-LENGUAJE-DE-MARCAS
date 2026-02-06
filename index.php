@@ -16,12 +16,12 @@
                 <li class="menu_asignatura">
                     <button class="menu_boton_desplegar" type="button">Asignaturas</button>
                     <ul class="menu_mostrar">
-                        <li>Ingles</li>
-                        <li>Programación</li>
-                        <li>Digitalización</li>
-                        <li>Sostenibilidad</li>
-                        <li>Entornos de desarrollo</li>
-                        <li>Lenguajes de marcas</li>
+                        <li class="menu_item">Ingles</li>
+                        <li class="menu_item">Programación</li>
+                        <li class="menu_item">Digitalización</li>
+                        <li class="menu_item">Sostenibilidad</li>
+                        <li class="menu_item">Entornos de desarrollo</li>
+                        <li class="menu_item">Lenguajes de marcas</li>
                     </ul>      
                 </li>
                 <li class="menu_cursos">
