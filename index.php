@@ -3,32 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css/home/home.css">
+    <link rel="stylesheet" href="./styles/home/home.css">
+    <style>body { font-family: "Inter", sans-serif;}</style>
     <title>Document</title>
 </head>
 <body>
 
     <!-- ENCABEZADO -->
     <header class="menu">
-        <nav class="menu_contenido_listas">
-            <p class="menu_desplegar_asignatura menu_mostrar">Asignaturas</p>
-            <ul >
-                <li>Ingles</li>
-                <li>Programación</li>
-                <li>Digitalización</li>
-                <li>Sostenibilidad</li>
-                <li>Entornos de desarrollo</li>
-                <li>Lenguajes de marcas</li>
+        <nav class="menu_navegacion">
+            <ul class="menu_lista">
+                <li>
+                    <p class="menu_desplegar_asignatura">Asignaturas</p>
+                    <ul class="menu_mostrar">
+                        <li>Ingles</li>
+                        <li>Programación</li>
+                        <li>Digitalización</li>
+                        <li>Sostenibilidad</li>
+                        <li>Entornos de desarrollo</li>
+                        <li>Lenguajes de marcas</li>
+                    </ul>      
+                </li>
+                <li>
+                    <p class="menu_desplegar_cursos">Programa</p>
+                    <ul class="menu_mostrar">
+                        <li>DAM</li>
+                        <li>Relaciones Internacionales</li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="menu_modal" type="button">Buscar</button>
+                </li>
+                <li>
+                    <button class="menu_modal" type="button">Acceder</button>
+                </li>
             </ul>
-
-            <p class="menu_desplegar_cursos">Programa</p>
-            <ul class="menu_mostrar">
-                <li>DAM</li>
-                <li>Relaciones Internacionales</li>
-            </ul>
-            
-            <button class="menu_modal" type="button">Buscar</button>
-            <button class="menu_modal" type="button">Acceder</button>
         </nav>
      </header>
 <!--  
