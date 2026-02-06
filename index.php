@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/home/home.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="./styles/index.css?v=<?php echo time(); ?>">
     <style>body { font-family: "Inter", sans-serif;}</style>
     <title>Document</title>
 </head>
@@ -40,6 +40,10 @@
             </ul>
         </nav>
      </header>
+
+     <main  id="mainContenedor" class="contenedor_main">
+        <canvas id="canvasHome" class="canvas_home"></canvas>
+     </main>
 <!--  
     <table style="width: 100%; ">
         <tr>
@@ -83,6 +87,6 @@
 
     <!-- <p class="footer"> WikiApuntes® and Mikiapuntes® are trademarks of MrK Entertainment. All rights reserved. ©2026 </p>
     <br/> -->
-
+    <script type="module" src="./js/tamanoCanvas.js?v=<?php echo time(); ?>"></script>
 </body>
 </html>
