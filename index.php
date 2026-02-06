@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/home/home.css">
+    <link rel="stylesheet" href="./styles/home/home.css?v=<?php echo time(); ?>">
     <style>body { font-family: "Inter", sans-serif;}</style>
     <title>Document</title>
 </head>
@@ -12,9 +12,9 @@
     <!-- ENCABEZADO -->
     <header class="menu">
         <nav class="menu_navegacion">
-            <ul class="menu_lista">
-                <li>
-                    <p class="menu_desplegar_asignatura">Asignaturas</p>
+            <ul class="menu_lista_navegacion">
+                <li class="menu_asignatura">
+                    <button class="menu_boton_desplegar" type="button">Asignaturas</button>
                     <ul class="menu_mostrar">
                         <li>Ingles</li>
                         <li>Programación</li>
@@ -24,18 +24,18 @@
                         <li>Lenguajes de marcas</li>
                     </ul>      
                 </li>
-                <li>
-                    <p class="menu_desplegar_cursos">Programa</p>
+                <li class="menu_cursos">
+                    <button class="menu_boton_desplegar" type="button">Programa</button>
                     <ul class="menu_mostrar">
                         <li>DAM</li>
                         <li>Relaciones Internacionales</li>
                     </ul>
                 </li>
-                <li>
-                    <button class="menu_modal" type="button">Buscar</button>
+                <li class="menu_buscar">
+                    <button class="boton_modal" type="button">Buscar</button>
                 </li>
-                <li>
-                    <button class="menu_modal" type="button">Acceder</button>
+                <li class="menu_acceder">
+                    <button class="boton_modal" type="button">Acceder</button>
                 </li>
             </ul>
         </nav>
