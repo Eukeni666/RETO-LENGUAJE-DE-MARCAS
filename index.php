@@ -27,8 +27,8 @@
                 <li class="menu_cursos">
                     <button class="menu_boton_desplegar" type="button">Programa</button>
                     <ul class="menu_mostrar">
-                        <li>DAM</li>
-                        <li>Relaciones Internacionales</li>
+                        <li class="menu_item">DAM</li>
+                        <li class="menu_item">Relaciones Internacionales</li>
                     </ul>
                 </li>
                 <li class="menu_buscar">
