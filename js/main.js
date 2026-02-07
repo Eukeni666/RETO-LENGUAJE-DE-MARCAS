@@ -1,4 +1,4 @@
-import { renderizar } from './render';
+import { renderizar } from './render.js';
 
 const contenerdorMain = document.getElementById('mainContenedor');
 const canvasHome = document.getElementById('canvasHome');
