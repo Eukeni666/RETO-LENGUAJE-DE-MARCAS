@@ -44,49 +44,6 @@
      <main  id="mainContenedor" class="contenedor_main">
         <canvas id="canvasHome" class="canvas_home"></canvas>
      </main>
-<!--  
-    <table style="width: 100%; ">
-        <tr>
-            <td rowspan="2" class="tdEncabezado" style="width: 16%;"> 
-                <img class="imagen" src="img/logo1 4.png" width="90">
-            </td>
-            <td colspan="4"> &nbsp</td>
-        </tr>
-        <tr class = "tdSuperiorMenu">
-            <td width = "21%"><a href="1upload.html"> Upload</a></td>
-            <td width = "21%"><a href="2search.html"> Search</a></td>
-            <td width = "21%"><a href="3popular.html"> Popular</a></td>
-            <td width = "21%"><a href="4forum.html"> Forum</a></td>
-        </tr>
-    </table>
-    
-    <hr/>
-    
-    <h1> Welcome to <span class="W">W</span><span class="M">M</span>ikiApuntes.com </h1>
-    <h3> <span class="W"> your</span><span class="M"> Mikeldi students </span> source for reliable classnotes </h3>
- -->
-    <!-- IMAGEN -->
-
-<!--     <img src="img/students/students2.png" width="100%">
-    <br/> -->
-
-    <!-- TABLA UPLOAD / SEARCH -->
-
-<!--     <table border="px" style="width: 100%;">
-        <tr>
-            <td class="tdUploadSearch" style="width: 50%;"><a href="1upload.html">
-                    <center> UPLOAD 
-                </a><br/> your classnotes </center>
-            </td>
-            <td class="tdUploadSearch" style="width: 50%;"><a href="2search.html"><center> SEARCH </a><br/> for classnotes </center></td>
-        </tr>
-    </table> -->
-
-    
-    <!-- FOOTER -->
-
-    <!-- <p class="footer"> WikiApuntes® and Mikiapuntes® are trademarks of MrK Entertainment. All rights reserved. ©2026 </p>
-    <br/> -->
     <script type="module" src="./js/main.js?v=<?php echo time(); ?>"></script>
 </body>
 </html>
