@@ -88,6 +88,5 @@
     <!-- <p class="footer"> WikiApuntes® and Mikiapuntes® are trademarks of MrK Entertainment. All rights reserved. ©2026 </p>
     <br/> -->
     <script type="module" src="./js/main.js?v=<?php echo time(); ?>"></script>
-    <script type="module" src="./js/render.js?v=<?php echo time(); ?>"></script>
 </body>
 </html>
