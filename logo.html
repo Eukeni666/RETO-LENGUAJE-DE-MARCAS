@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+    <canvas id="logo" width="500" height="500"
+        style = "border: 1px solid black;
+            background-color: #FCF9EB;">
+        
+    </canvas>
+    <script type="text/javascript">
+        var v = document.getElementById ("logo");
+        var l = v.getContext ("2d");
+        
+        /***********************************/
+        /******** LÍNEAS DE FONDO **********/
+        /***********************************/
+
+        l.beginPath ();
+        l.strokeStyle = "#9E9D99";
+        l.globalAlpha = 0.5;
+        l.moveTo (75, 50);
+        l.lineTo (425, 50);
+        l.stroke ();
+        l.moveTo (75, 80);
+        l.lineTo (425, 80);
+        l.stroke ();
+        l.moveTo (75, 110);
+        l.lineTo (425, 110);
+        l.stroke ();
+        l.moveTo (75, 140);
+        l.lineTo (425, 140);
+        l.stroke ();
+        l.moveTo (75, 170);
+        l.lineTo (425, 170);
+        l.stroke ();
+        l.moveTo (75, 200);
+        l.lineTo (425, 200);
+        l.stroke ();
+        l.moveTo (75, 230);
+        l.lineTo (425, 230);
+        l.stroke ();
+        l.moveTo (75, 260);
+        l.lineTo (425, 260);
+        l.stroke ();
+        l.moveTo (75, 290);
+        l.lineTo (425, 290);
+        l.stroke ();
+        l.moveTo (75, 320);
+        l.lineTo (425, 320);
+        l.stroke ();
+        l.moveTo (75, 350);
+        l.lineTo (425, 350);
+        l.stroke ();
+        l.moveTo (75, 380);
+        l.lineTo (425, 380);
+        l.stroke ();
+        l.moveTo (75, 410);
+        l.lineTo (425, 410);
+        l.stroke ();
+        l.moveTo (75, 440);
+        l.lineTo (425, 440);
+        l.stroke ();
+        l.closePath ();
+        
+        // L�NEA VERTICAL ROJA
+        l.beginPath ();
+        l.moveTo (135, 50);
+        l.lineTo (135, 440);
+        l.strokeStyle = "red";
+        l.globalAlpha = 0.5;
+        l.stroke ();
+        l.closePath ();
+        /*
+        // BOCETO
+        l.beginPath ();
+        l.strokeStyle= "blue";
+        l.moveTo (50, 50);
+        l.lineTo (100, 350);
+        l.stroke ();
+        l.lineTo (150, 250);
+        l.lineTo (200, 350);
+        l.lineTo (300, 50);
+        l.lineTo (450, 450);
+        l.stroke ();
+        l.closePath ();
+        */
+
+        /***********************************/
+        /*************** W *****************/
+        /***********************************/
+
+        // trazo 1 \
+        l.beginPath ();
+        l.fillStyle = "#669FE3";
+        l.globalAlpha = 1;
+        l.moveTo (25, 50);
+        l.lineTo (75, 350);
+        l.lineTo (125, 350);
+        l.lineTo (75, 50);
+        l.lineTo (25, 50);
+        l.fill ();
+        l.closePath ();
+        
+        // trazo 2 /
+        l.beginPath ();
+        l.fillStyle = "#2A6DBD";
+        l.globalAlpha = 1;
+        l.moveTo (75, 350);
+        //l.lineTo (125, 250);
+        l.lineTo (125, 200);
+        //l.lineTo (175, 250);
+        l.lineTo (175, 200);
+        l.lineTo (125, 350);
+        l.lineTo (75, 350);
+        l.fill ();
+        l.closePath ();
+        
+        // trazo 3 \
+        l.beginPath ();
+        l.fillStyle = "#034B9E";
+        l.globalAlpha = 1;
+        l.moveTo (125, 200);
+        //l.moveTo (125, 250);
+        l.lineTo (175, 350);
+        l.lineTo (225, 350);
+        //l.lineTo (175, 250);
+        l.lineTo (175, 200);
+        l.fill ();
+        l.closePath ();
+        
+        /***********************************/
+        /**************  A  ****************/
+        /***********************************/
+        
+        // trazo 1 /
+        l.beginPath ();
+        l.fillStyle = "black";
+        l.globalAlpha = 1;
+        l.moveTo (175, 350);
+        l.lineTo (225, 350);
+        l.lineTo (320, 50);
+        l.lineTo (270, 50);
+        l.lineTo (175, 350);
+        l.fill ();
+        l.closePath ();
+        
+        
+        // trazo 2 -
+        l.beginPath ();
+        l.fillStyle = "black";
+        l.globalAlpha = 0.5;
+        l.moveTo (264, 310);
+        l.lineTo (360, 310);
+        l.lineTo (346, 270);
+        l.lineTo (250, 270);
+        l.fill ();
+        l.closePath ();
+        
+
+        /***********************************/
+        /************* LÁPIZ ***************/
+        /***********************************/
+
+        l.fillStyle = "#ffdd45";
+        l.globalAlpha = 1;
+        /*
+        // TODO
+        l.beginPath ();
+        l.moveTo (275, 25);
+        l.lineTo (390, 360);
+        l.lineTo (440, 345);
+        l.lineTo (325, 10);
+        l.lineTo (275, 25);
+        l.stroke ();
+        l.fill ();
+        l.closePath ();
+        */
+        // 1 CABEZA
+        l.beginPath ();
+        l.moveTo (275, 25);
+        l.lineTo (283, 50);
+        l.lineTo (334, 33);
+        l.lineTo (325, 9);
+        //l.stroke ();
+        l.fill ();
+        l.closePath ();
+        
+        // 2 CABEZA
+        l.beginPath ();
+        l.moveTo (285, 53);
+        l.lineTo (300, 100);
+        l.lineTo (350, 82);
+        l.lineTo (334, 37);
+        //l.stroke ();
+        l.fill ();
+        l.closePath ();
+        // 3 CUERPO
+        l.beginPath ();
+        l.moveTo (302, 103);
+        l.lineTo (390, 360);
+        l.lineTo (440, 345);
+        l.lineTo (350, 86);
+        //l.stroke ();
+        l.fill ();
+        l.closePath ();
+        
+        // 4 ABAJO
+        l.beginPath ();
+        l.moveTo (393, 363);
+        l.lineTo (433, 419);
+        l.lineTo (443, 415);
+        l.lineTo (440, 349);
+        l.lineTo (393, 363);
+        //l.stroke ();
+        l.fill ();
+        l.closePath ();
+
+        // 5 PUNTA
+        l.beginPath ();
+        l.moveTo (435, 421);
+        l.lineTo (446, 440);
+        l.lineTo (443, 418);
+        l.lineTo (435, 421);
+        //l.stroke ();
+        l.fill ();
+        l.closePath ();
+
+        /***********************************/
+        /************* TRAZO ***************/
+        /***********************************/ 
+
+        l.beginPath ();
+        l.fillStyle = "black";
+        l.moveTo (100, 380);
+        l.lineTo (160, 429);
+        l.quadraticCurveTo (250, 492, 450, 450);
+        l.moveTo (450, 450);
+        l.quadraticCurveTo (250, 482, 160, 410);
+        l.lineTo (127, 380);
+        l.lineTo (100, 380);
+        l.fill ();
+        //l.stroke ();
+/*        l.moveTo (120, 380);
+        l.lineTo (170, 430);
+        l.quadraticCurveTo (270, 495, 450, 448);
+        l.stroke ();
+        l.moveTo (140, 380);
+        l.lineTo (180, 430);
+        l.quadraticCurveTo (290, 495, 450, 446);
+        l.stroke ();
+*/
+        l.closePath ();
+
+
+        
+    </script>
+
+
+
+</body>
+</html>
