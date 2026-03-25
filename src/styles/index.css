@@ -1,6 +1,8 @@
 :root {
   --font-base: "Inter", Arial, sans-serif;
   --font-title: "Inter", Arial, sans-serif;
+  --font-size-title: 6.5rem;
+  --font-size-subtitle: 3.3rem;
   --color-page-bg: #2093ff;
   --color-surface: #fdfdff;
   --color-brand: #374151;
@@ -186,16 +188,16 @@ nav button:hover {
 }
 
 .hero-kicker {
-  margin-bottom: 1.25rem;
   font-size: clamp(1.15rem, 1.9vw, 1.7rem);
   font-weight: 500;
   color: var(--color-hero-accent);
   letter-spacing: -0.02em;
+  text-align: right;
 }
 
 .hero-copy h1 {
   font-family: var(--font-title);
-  font-size: clamp(3rem, 7.8vw, 8.3rem);
+  font-size: var(--font-size-title);
   line-height: 0.92;
   letter-spacing: -0.055em;
   font-weight: 700;

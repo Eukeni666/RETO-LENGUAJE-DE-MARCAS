@@ -1,4 +1,10 @@
 :root {
   --color-page-bg: #2e5cb3;
   --color-hero-accent: #a4c7b3;
+  --color-hero-accent-transparent: #a4c7b381;
+}
+
+.subtitle {
+  color: var(--color-hero-accent-transparent);
+  font-size: var(--font-size-subtitle);
 }
