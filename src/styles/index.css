@@ -1,19 +1,19 @@
 :root {
-  --font-base: "Inter", Arial, sans-serif;
-  --font-title: "Inter", Arial, sans-serif;
-  --color-page-bg: #2093ff;
-  --color-surface: #fdfdff;
-  --color-brand: #374151;
-  --color-text: #4b5563;
-  --color-hover: #f1f5f9;
-  --color-border-soft: #d1d5db;
-  --color-primary: #111111;
-  --color-hero-accent: #1a1a1a;
-  --color-body-copy: #1b1b1b;
-  --color-slot-border: rgba(23, 23, 23, 0.22);
-  --color-slot-bg: rgba(255, 255, 255, 0.35);
-  --color-slot-text: rgba(23, 23, 23, 0.6);
-  --shadow-dropdown: 0 10px 24px rgba(0, 0, 0, 0.08);
+  --fuente-base: "Inter", Arial, sans-serif;
+  --fuente-titulos: "Inter", Arial, sans-serif;
+  --color-fondo-pagina: #2093ff;
+  --color-superficie: #fdfdff;
+  --color-marca: #374151;
+  --color-texto: #4b5563;
+  --color-fondo-hover: #f1f5f9;
+  --color-borde-suave: #d1d5db;
+  --color-principal: #111111;
+  --color-portada: #1a1a1a;
+  --color-texto-cuerpo: #1b1b1b;
+  --color-borde-imagen: rgba(23, 23, 23, 0.22);
+  --color-fondo-imagen: rgba(255, 255, 255, 0.35);
+  --color-texto-imagen: rgba(23, 23, 23, 0.6);
+  --sombra-menu: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
 html {
@@ -33,8 +33,8 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: var(--font-base);
-  background: var(--color-page-bg);
+  font-family: var(--fuente-base);
+  background: var(--color-fondo-pagina);
 }
 
 img,
@@ -57,13 +57,13 @@ a {
   color: inherit;
 }
 
-.container {
+.contenedor {
   width: 90vw;
   display: flex;
   margin: 2rem auto 0;
 }
 
-.top-bar {
+.barra-superior {
   width: 80%;
   display: flex;
   align-items: center;
@@ -72,20 +72,20 @@ a {
   max-width: 1100px;
   padding: 1rem;
   margin: 0 auto;
-  background-color: var(--color-surface);
+  background-color: var(--color-superficie);
   border-radius: 1rem;
 }
 
-.brand {
-  font-family: var(--font-title);
+.marca {
+  font-family: var(--fuente-titulos);
   font-weight: 700;
-  color: var(--color-brand);
+  color: var(--color-marca);
   text-decoration: none;
   font-size: 1.1rem;
   margin-right: 12px;
 }
 
-.nav-wrap {
+.bloque-navegacion {
   display: flex;
   align-items: center;
   gap: 32px;
@@ -109,7 +109,7 @@ nav button {
   display: block;
   border: none;
   background: transparent;
-  color: var(--color-text);
+  color: var(--color-texto);
   text-decoration: none;
   padding: 10px 14px;
   border-radius: 8px;
@@ -118,36 +118,36 @@ nav button {
 
 nav a:hover,
 nav button:hover {
-  background: var(--color-hover);
+  background: var(--color-fondo-hover);
 }
 
-.dropdown-menu {
+.menu-desplegable {
   display: none;
   position: absolute;
   top: calc(100% + 6px);
   left: 50%;
   transform: translateX(-50%);
   min-width: 220px;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border-soft);
+  background: var(--color-superficie);
+  border: 1px solid var(--color-borde-suave);
   border-radius: 10px;
-  box-shadow: var(--shadow-dropdown);
+  box-shadow: var(--sombra-menu);
   padding: 8px;
   z-index: 10;
 }
 
-.dropdown-menu li,
-.dropdown-menu a {
+.menu-desplegable li,
+.menu-desplegable a {
   width: 100%;
 }
 
-.dropdown:hover .dropdown-menu {
+.desplegable:hover .menu-desplegable {
   display: block;
 }
 
-.login-box {
-  background: var(--color-surface);
-  color: var(--color-primary);
+.acceso-sesion {
+  background: var(--color-superficie);
+  color: var(--color-principal);
   padding: 10px 16px;
   border-radius: 1rem;
   display: flex;
@@ -156,19 +156,19 @@ nav button:hover {
   font-weight: 700;
 }
 
-.industry-page {
+.pagina-asignatura {
   width: 100%;
   overflow-x: clip;
   color: #171717;
 }
 
-.industry-hero {
+.portada-asignatura {
   width: min(90vw, 1280px);
   margin: 0 auto;
   min-height: 32rem;
 }
 
-.hero-layout {
+.contenido-portada {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -178,32 +178,32 @@ nav button:hover {
   min-height: 34rem;
 }
 
-.hero-copy {
+.texto-portada {
   flex: 1 1 420px;
   padding-top: 3.5rem;
   order: 1;
   z-index: 2;
 }
 
-.hero-kicker {
+.curso {
   margin-bottom: 1.25rem;
   font-size: clamp(1.15rem, 1.9vw, 1.7rem);
   font-weight: 500;
-  color: var(--color-hero-accent);
+  color: var(--color-portada);
   letter-spacing: -0.02em;
 }
 
-.hero-copy h1 {
-  font-family: var(--font-title);
+.texto-portada h1 {
+  font-family: var(--fuente-titulos);
   font-size: clamp(3rem, 7.8vw, 8.3rem);
   line-height: 0.92;
   letter-spacing: -0.055em;
   font-weight: 700;
   max-width: 8.2ch;
-  color: var(--color-hero-accent);
+  color: var(--color-portada);
 }
 
-.hero-description {
+.descripcion-portada {
   flex: 0 1 36rem;
   margin-left: auto;
   max-width: 36rem;
@@ -212,19 +212,19 @@ nav button:hover {
   z-index: 2;
 }
 
-.hero-description p {
+.descripcion-portada p {
   font-size: clamp(1rem, 1.45vw, 1.3rem);
   line-height: 1.24;
   letter-spacing: -0.025em;
-  color: var(--color-body-copy);
+  color: var(--color-texto-cuerpo);
 }
 
-.hero-art {
+.imagen-portada {
   position: relative;
   pointer-events: none;
 }
 
-.hero-art-top {
+.imagen-portada-superior {
   flex: 0 1 540px;
   width: min(100%, 540px);
   height: 470px;
@@ -235,7 +235,7 @@ nav button:hover {
   z-index: 1;
 }
 
-.hero-art-bottom {
+.imagen-portada-inferior {
   flex: 0 0 390px;
   width: 390px;
   height: 250px;
@@ -246,12 +246,12 @@ nav button:hover {
   z-index: 1;
 }
 
-.hero-image-slot {
+.hueco-imagen {
   width: 100%;
   height: 100%;
-  border: 2px dashed var(--color-slot-border);
+  border: 2px dashed var(--color-borde-imagen);
   border-radius: 20px;
-  background: var(--color-slot-bg);
+  background: var(--color-fondo-imagen);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,27 +259,27 @@ nav button:hover {
   padding: 1rem;
 }
 
-.hero-image-slot span {
-  font-family: var(--font-title);
+.hueco-imagen span {
+  font-family: var(--fuente-titulos);
   font-size: 0.95rem;
   font-weight: 600;
-  color: var(--color-slot-text);
+  color: var(--color-texto-imagen);
   letter-spacing: 0.02em;
 }
 
 @media (max-width: 1180px) {
-  .hero-layout {
+  .contenido-portada {
     flex-direction: column;
     flex-wrap: nowrap;
     min-height: auto;
     gap: 1.4rem;
   }
 
-  .hero-copy {
+  .texto-portada {
     padding-top: 1.2rem;
   }
 
-  .hero-art-top {
+  .imagen-portada-superior {
     align-self: flex-end;
     margin-right: 0;
     margin-left: 0;
@@ -287,7 +287,7 @@ nav button:hover {
     height: 360px;
   }
 
-  .hero-art-bottom {
+  .imagen-portada-inferior {
     align-self: flex-start;
     margin-left: 0;
     margin-top: 0;
@@ -296,7 +296,7 @@ nav button:hover {
     height: 220px;
   }
 
-  .hero-description {
+  .descripcion-portada {
     margin-left: 0;
     max-width: 42rem;
     padding-bottom: 2.2rem;
@@ -304,12 +304,12 @@ nav button:hover {
 }
 
 @media (max-width: 768px) {
-  .top-bar {
+  .barra-superior {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .nav-wrap {
+  .bloque-navegacion {
     flex-direction: column;
     align-items: stretch;
     gap: 12px;
@@ -320,7 +320,7 @@ nav button:hover {
     align-items: stretch;
   }
 
-  .dropdown-menu {
+  .menu-desplegable {
     position: static;
     display: block;
     left: auto;
@@ -329,34 +329,34 @@ nav button:hover {
     margin-top: 6px;
   }
 
-  .login-box {
+  .acceso-sesion {
     align-self: flex-start;
   }
 
-  .industry-hero {
+  .portada-asignatura {
     min-height: auto;
   }
 
-  .hero-copy h1 {
+  .texto-portada h1 {
     max-width: 9.5ch;
     letter-spacing: -0.045em;
   }
 
-  .hero-art-top {
+  .imagen-portada-superior {
     width: 310px;
     height: 280px;
   }
 
-  .hero-art-bottom {
+  .imagen-portada-inferior {
     width: 272px;
     height: 186px;
   }
 
-  .hero-description {
+  .descripcion-portada {
     padding-bottom: 1.5rem;
   }
 
-  .hero-description p {
+  .descripcion-portada p {
     line-height: 1.3;
   }
 }
