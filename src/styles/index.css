@@ -191,6 +191,7 @@ nav button:hover {
   font-weight: 500;
   color: var(--color-portada);
   letter-spacing: -0.02em;
+  text-align: right;
 }
 
 .texto-portada h1 {
