@@ -147,15 +147,12 @@ nav button:hover {
 
 
 .pagina-asignatura {
-  width: 100%;
-  overflow-x: clip;
-  color: #171717;
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .portada-asignatura {
-  width: min(90vw, 1280px);
   margin: 0 auto;
-  min-height: 32rem;
 }
 
 .contenido-portada {
@@ -170,14 +167,13 @@ nav button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 6rem 0;
 }
 
 .curso {
   font-size: 1.8rem;
   font-weight: 500;
   color: var(--color-portada);
-  letter-spacing: -0.02em;
-  text-align: right;
 }
 
 .texto-portada h1 {
@@ -191,9 +187,6 @@ nav button:hover {
 
 .descripcion-portada {
   max-width: 36rem;
-  padding-top: 0.5rem;
-  order: 4;
-  z-index: 2;
 }
 
 .descripcion-portada p {
@@ -202,83 +195,8 @@ nav button:hover {
   color: var(--color-texto-cuerpo);
 }
 
-.imagen-portada {
-  position: relative;
-  pointer-events: none;
-}
-
-.imagen-portada-superior {
-  flex: 0 1 540px;
-  width: min(100%, 540px);
-  height: 470px;
-  margin-top: 0.4rem;
-  margin-left: auto;
-  margin-right: -2.4rem;
-  order: 2;
-  z-index: 1;
-}
-
-.imagen-portada-inferior {
-  flex: 0 0 390px;
-  width: 390px;
-  height: 250px;
-  margin-left: -1.9rem;
-  margin-top: -1.3rem;
-  margin-bottom: -1.3rem;
-  order: 3;
-  z-index: 1;
-}
-
-.hueco-imagen {
-  width: 100%;
-  height: 100%;
-  border: 2px dashed var(--color-borde-imagen);
-  border-radius: 20px;
-  background: var(--color-fondo-imagen);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem;
-}
-
-.hueco-imagen span {
-  font-family: var(--fuente-titulos);
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--color-texto-imagen);
-  letter-spacing: 0.02em;
-}
 
 @media (max-width: 1180px) {
-  .contenido-portada {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    min-height: auto;
-    gap: 1.4rem;
-  }
-
-  .texto-portada {
-    padding-top: 1.2rem;
-  }
-
-  .imagen-portada-superior {
-    align-self: flex-end;
-    margin-right: 0;
-    margin-left: 0;
-    width: 430px;
-    height: 360px;
-  }
-
-  .imagen-portada-inferior {
-    align-self: flex-start;
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    width: 330px;
-    height: 220px;
-  }
-
   .descripcion-portada {
     margin-left: 0;
     max-width: 42rem;
@@ -287,16 +205,6 @@ nav button:hover {
 }
 
 @media (max-width: 768px) {
-  .barra-superior {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .bloque-navegacion {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
-  }
 
   nav ul {
     flex-direction: column;
@@ -314,25 +222,6 @@ nav button:hover {
 
   .acceso-sesion {
     align-self: flex-start;
-  }
-
-  .portada-asignatura {
-    min-height: auto;
-  }
-
-  .texto-portada h1 {
-    max-width: 9.5ch;
-    letter-spacing: -0.045em;
-  }
-
-  .imagen-portada-superior {
-    width: 310px;
-    height: 280px;
-  }
-
-  .imagen-portada-inferior {
-    width: 272px;
-    height: 186px;
   }
 
   .descripcion-portada {
