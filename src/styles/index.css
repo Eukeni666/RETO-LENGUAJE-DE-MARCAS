@@ -145,16 +145,6 @@ nav button:hover {
   display: block;
 }
 
-.acceso-sesion {
-  background: var(--color-superficie);
-  color: var(--color-principal);
-  padding: 10px 16px;
-  border-radius: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-}
 
 .pagina-asignatura {
   width: 100%;
@@ -169,25 +159,21 @@ nav button:hover {
 }
 
 .contenido-portada {
-  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  gap: 0.75rem 2.2rem;
-  min-height: 34rem;
+  flex-wrap: wrap;
 }
 
 .texto-portada {
-  flex: 1 1 420px;
-  padding-top: 3.5rem;
-  order: 1;
-  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .curso {
-  margin-bottom: 1.25rem;
-  font-size: clamp(1.15rem, 1.9vw, 1.7rem);
+  font-size: 1.8rem;
   font-weight: 500;
   color: var(--color-portada);
   letter-spacing: -0.02em;
@@ -196,17 +182,14 @@ nav button:hover {
 
 .texto-portada h1 {
   font-family: var(--fuente-titulos);
-  font-size: clamp(3rem, 7.8vw, 8.3rem);
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--color-portada);
   line-height: 0.92;
   letter-spacing: -0.055em;
-  font-weight: 700;
-  max-width: 8.2ch;
-  color: var(--color-portada);
 }
 
 .descripcion-portada {
-  flex: 0 1 36rem;
-  margin-left: auto;
   max-width: 36rem;
   padding-top: 0.5rem;
   order: 4;
@@ -214,7 +197,6 @@ nav button:hover {
 }
 
 .descripcion-portada p {
-  font-size: clamp(1rem, 1.45vw, 1.3rem);
   line-height: 1.24;
   letter-spacing: -0.025em;
   color: var(--color-texto-cuerpo);
