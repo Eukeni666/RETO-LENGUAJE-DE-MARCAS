@@ -58,20 +58,20 @@ a {
 }
 
 .contenedor {
-  width: 90vw;
+  width: 100vw;
   display: flex;
   margin-top: 3rem;
+  justify-content: center;
 }
 
 .barra-superior {
-  width: 80%;
+  width: 60%;
+  height: 6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.3rem;
-  max-width: 1100px;
-  padding: 1rem;
-  margin: 0 auto;
+  padding: 1rem 4.5rem;
   background-color: var(--color-superficie);
   border-radius: 1rem;
 }
