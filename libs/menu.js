@@ -1,30 +1,32 @@
 const botonatras = document.getElementById('atras');
 const botonsiguiente = document.getElementById('siguiente');
 
-const BASE_URL = './src/pages'
-const enlaces = ['./index.html', 
-    './baseDeDatos.html', 
-    './lenguaje-de-marcas.html', 
-    './entornosDeDesarrollo.html', 
-    './sostenibilidad.html',
-    './itinerario.html',
-    './ingles.html',];
+const enlaces = [
+    '/index.html',
+    '/src/pages/baseDeDatos.html',
+    '/src/pages/lenguaje-de-marcas.html',
+    '/src/pages/entornos.html',
+    '/src/pages/sostenibilidad.html',
+    '/src/pages/ipe.html',
+    '/src/pages/ingles.html',
+];
 
+function navegarA(indice) {
+    window.location.href = enlaces[(indice + enlaces.length) % enlaces.length];
+}
 
-botonatras.addEventListener('click', () => {
-    let urlActual = ''
-    if (window.location.pathname.endsWith('/index.html')) {
-        urlActual = window.location.href = BASE_URL + enlaces[enlaces.length - 1];
-    }
+function obtenerIndiceActual() {
+    const rutaActual = window.location.pathname;
+    const indiceActual = enlaces.findIndex(enlace => rutaActual.endsWith(enlace));
 
-    const urlActual = window.location.pathname;
-    const indiceActual = enlaces.findIndex(enlace => urlActual.endsWith(enlace));
-    
-})
+    return indiceActual === -1 ? 0 : indiceActual;
+}
 
-botonsiguiente.addEventListener('click', () => {
-    const urlActual = window.location.pathname;
-    const indiceActual = enlaces.findIndex(enlace => urlActual.endsWith(enlace));
-    console.log(indiceActual);
-})
+botonatras?.addEventListener('click', () => {
+    navegarA(obtenerIndiceActual() - 1);
+});
+
+botonsiguiente?.addEventListener('click', () => {
+    navegarA(obtenerIndiceActual() + 1);
+});
 
