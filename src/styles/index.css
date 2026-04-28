@@ -185,15 +185,6 @@ nav button:hover {
   z-index: 2;
 }
 
-.curso {
-  margin-bottom: 1.25rem;
-  font-size: clamp(1.15rem, 1.9vw, 1.7rem);
-  font-weight: 500;
-  color: var(--color-portada);
-  letter-spacing: -0.02em;
-  text-align: right;
-}
-
 .texto-portada h1 {
   font-family: var(--fuente-titulos);
   font-size: clamp(3rem, 7.8vw, 8.3rem);
