@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'node:path'
 
-export default defineConfig({
-  base: '/RETO-LENGUAJE-DE-MARCAS/',
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/RETO-LENGUAJE-DE-MARCAS/' : '/',
   build: {
     rollupOptions: {
       input: {
@@ -17,4 +17,4 @@ export default defineConfig({
       }
     }
   }
-})
+}))
