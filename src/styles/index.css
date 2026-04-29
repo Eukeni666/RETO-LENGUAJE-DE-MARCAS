@@ -279,7 +279,8 @@ nav button:hover {
 
 .imagen-portada {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .apuntes-grid {

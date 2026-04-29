@@ -3,3 +3,8 @@
   --color-portada: #a4c7b1;
   --color-texto-cuerpo: #f8fafc;
 }
+
+.imagen-portada h3 {
+  font-size: 2.5rem;
+  color: var(--color-portada);
+}
