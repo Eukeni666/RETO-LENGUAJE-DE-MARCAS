@@ -62,6 +62,7 @@ a {
   display: flex;
   margin-top: 3rem;
   justify-content: center;
+  margin-bottom: 2.5rem;
 }
 
 .barra-superior {
@@ -179,14 +180,61 @@ nav button:hover {
 
 
 .pagina-asignatura {
-  width: 90vw;
+  width: 60vw;
   min-height: 75vh;
   margin: 0 auto;
+
 }
 
-main {
-  background: #fff;
-  padding: 4rem 1.5rem 5rem;
+.pie-pagina {
+  margin-top: 3rem;
+  background: #111827;
+  color: #fff;
+  padding: 2rem 1.5rem;
+}
+
+.pie-pagina__contenido {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.pie-pagina__marca {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pie-pagina__logo {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+.pie-pagina__nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.pie-pagina a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.pie-pagina a:hover {
+  color: black;
+}
+
+.pie-pagina__texto {
+  flex-basis: 100%;
+  color: #cbd5e1;
+  font-size: 0.9rem;
 }
 
 .portada-asignatura {
@@ -205,7 +253,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 6rem 0;
+  margin: 3.5rem 0;
 }
 
 .texto-portada h1 {
@@ -228,7 +276,7 @@ main {
 }
 
 .apuntes-grid {
-  width: min(1120px, 100%);
+  width: 60vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -358,8 +406,9 @@ main {
     line-height: 1.3;
   }
 
-  main {
-    padding: 3rem 1rem 4rem;
+  .pie-pagina__contenido,
+  .pie-pagina__nav ul {
+    flex-direction: column;
   }
 
   .apuntes-grid {
