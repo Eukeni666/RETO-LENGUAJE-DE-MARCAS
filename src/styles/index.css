@@ -62,7 +62,7 @@ a {
   display: flex;
   margin-top: 3rem;
   justify-content: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .barra-superior {
@@ -243,12 +243,11 @@ nav button:hover {
 
 .contenido-portada {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 3rem;
 }
 
-.texto-portada {
+.texto-descripcion {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -266,13 +265,21 @@ nav button:hover {
 }
 
 .descripcion-portada {
-  max-width: 36rem;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .descripcion-portada p {
   line-height: 1.24;
   letter-spacing: -0.025em;
   color: var(--color-texto-cuerpo);
+}
+
+.imagen-portada {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .apuntes-grid {
