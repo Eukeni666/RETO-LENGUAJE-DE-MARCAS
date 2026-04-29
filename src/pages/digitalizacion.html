@@ -9,13 +9,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/index.css">
   <link rel="stylesheet" href="../styles/digitalizacion.css">
+  <script type="module" src="/lib/mis-apuntes.js"></script>
   <title>WikiApuntes</title>
 </head>
 
 <body>
   <header class="contenedor">
     <div class="barra-superior">
-      <a class="marca" href="/index.html">WikiApuntes</a>
+      <a class="marca" href="/index.html" aria-label="WikiApuntes">
+        <img class="marca__logo" src="/logo.svg" alt="WikiApuntes">
+      </a>
 
       <div class="bloque-navegacion">
         <nav aria-label="Navegación principal">
@@ -34,7 +37,14 @@
                 <li><a href="/src/pages/sostenibilidad.html">Sostenibilidad</a></li>
               </ul>
             </li>
-            <li><a href="/index.html">Mis apuntes</a></li>
+            <li><a href="/index.html" data-filtro-mis-apuntes>Mis apuntes</a></li>
+            <li class="perfil-usuario">
+              <a class="perfil-usuario__enlace" href="/index.html" aria-label="Perfil de usuario">
+                <img class="perfil-usuario__imagen"
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=160&amp;q=80"
+                  alt="Perfil de usuario">
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -45,16 +55,13 @@
       <div class="contenido-portada">
         <div class="texto-portada">
           <h1 id="titulo-asignatura">Digitalización</h1>
-          <p class="curso">D.A.M. 1</p>
         </div>
 
         <div class="descripcion-portada">
           <p>
-            At MindMarket, we help you uncover the insights that matter most — no matter
-            your industry. With deep experience across a wide range of sectors, we
-            understand the unique challenges and nuances each market brings. Whether
-            you're short on time, resources, or local context, we act as your research
-            partner offering practical, cost-effective solutions tailored to your goals.
+            Digitalización explica cómo la tecnología transforma empresas, servicios y
+            tareas diarias. Se estudian la nube, los datos, la inteligencia artificial,
+            la ciberseguridad y las herramientas que hacen más eficientes los procesos.
           </p>
         </div>
       </div>
@@ -64,81 +71,81 @@
     <section class="apuntes-grid">
       <article class="apunte"><span class="apunte__fecha">2026-03-24 11:00:00</span>
         <h2 class="apunte__titulo">Transformación digital</h2>
-        <p class="apunte__texto">Concepto.</p><span class="apunte__autor">1</span>
+        <p class="apunte__texto">Introducción a la transformación digital, explicando cómo la tecnología cambia procesos, servicios, comunicación y toma de decisiones en las organizaciones.</p><span class="apunte__autor">1</span>
         <section class="comentario">
-          <p class="comentario__texto">Buen resumen para entender el cambio digital.</p><span
+          <p class="comentario__texto">Buen resumen para entender el cambio digital; conecta bien la tecnología con los cambios reales en empresas y servicios.</p><span
             class="comentario__valoracion">5</span><span class="comentario__autor">laura02</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-24 12:00:00</span>
         <h2 class="apunte__titulo">Cloud</h2>
-        <p class="apunte__texto">Servicios cloud.</p><span class="apunte__autor">2</span>
+        <p class="apunte__texto">Resumen de servicios cloud, incluyendo almacenamiento, servidores, aplicaciones online y ventajas de trabajar con recursos escalables en internet.</p><span class="apunte__autor">2</span>
         <section class="comentario">
-          <p class="comentario__texto">Claro y útil para repasar servicios en la nube.</p><span
+          <p class="comentario__texto">Claro y útil para repasar servicios en la nube, especialmente al diferenciar almacenamiento, servidores y herramientas colaborativas online.</p><span
             class="comentario__valoracion">4</span><span class="comentario__autor">markel03</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-25 10:00:00</span>
         <h2 class="apunte__titulo">Big Data</h2>
-        <p class="apunte__texto">Datos masivos.</p><span class="apunte__autor">3</span>
+        <p class="apunte__texto">Apunte sobre Big Data y datos masivos, centrado en volumen, velocidad, variedad y análisis para obtener información útil.</p><span class="apunte__autor">3</span>
         <section class="comentario">
-          <p class="comentario__texto">Me ayuda a diferenciar datos masivos y análisis.</p><span
+          <p class="comentario__texto">Me ayuda a diferenciar datos masivos y análisis, además de entender por qué la calidad del dato importa tanto.</p><span
             class="comentario__valoracion">5</span><span class="comentario__autor">ane04</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-25 11:00:00</span>
         <h2 class="apunte__titulo">IA</h2>
-        <p class="apunte__texto">Inteligencia artificial.</p><span class="apunte__autor">4</span>
+        <p class="apunte__texto">Introducción a la inteligencia artificial, sus usos habituales, aprendizaje automático y ejemplos de automatización basada en datos.</p><span class="apunte__autor">4</span>
         <section class="comentario">
-          <p class="comentario__texto">Explicación sencilla de inteligencia artificial.</p><span
+          <p class="comentario__texto">Explicación sencilla de inteligencia artificial; sería una buena base para añadir ejemplos de uso cotidiano y riesgos actuales.</p><span
             class="comentario__valoracion">4</span><span class="comentario__autor">jon05</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-25 12:00:00</span>
         <h2 class="apunte__titulo">Ciberseguridad</h2>
-        <p class="apunte__texto">Protección.</p><span class="apunte__autor">5</span>
+        <p class="apunte__texto">Contenido sobre ciberseguridad básica, protección de cuentas, contraseñas seguras, copias de seguridad y prevención de amenazas digitales.</p><span class="apunte__autor">5</span>
         <section class="comentario">
-          <p class="comentario__texto">Contenido importante y fácil de seguir.</p><span
+          <p class="comentario__texto">Contenido importante y fácil de seguir, con ideas útiles para recordar hábitos básicos de seguridad en dispositivos y cuentas.</p><span
             class="comentario__valoracion">5</span><span class="comentario__autor">mikel06</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-26 10:00:00</span>
         <h2 class="apunte__titulo">IoT</h2>
-        <p class="apunte__texto">Dispositivos conectados.</p><span class="apunte__autor">6</span>
+        <p class="apunte__texto">Explicación del Internet de las Cosas, conectando sensores, dispositivos y redes para recoger datos y automatizar acciones.</p><span class="apunte__autor">6</span>
         <section class="comentario">
-          <p class="comentario__texto">Buen apunte sobre dispositivos conectados.</p><span
+          <p class="comentario__texto">Buen apunte sobre dispositivos conectados; explica de forma sencilla cómo sensores y redes permiten automatizar tareas del día a día.</p><span
             class="comentario__valoracion">4</span><span class="comentario__autor">naiara07</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-26 11:00:00</span>
         <h2 class="apunte__titulo">Blockchain</h2>
-        <p class="apunte__texto">Conceptos básicos.</p><span class="apunte__autor">7</span>
+        <p class="apunte__texto">Conceptos básicos de blockchain, bloques, cadenas, verificación distribuida y usos más allá de las criptomonedas.</p><span class="apunte__autor">7</span>
         <section class="comentario">
-          <p class="comentario__texto">Conceptos básicos bien explicados.</p><span
+          <p class="comentario__texto">Conceptos básicos bien explicados, sobre todo para entender la idea de cadena de bloques sin perderse en demasiados tecnicismos.</p><span
             class="comentario__valoracion">4</span><span class="comentario__autor">unai08</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-26 12:00:00</span>
         <h2 class="apunte__titulo">Automatización</h2>
-        <p class="apunte__texto">Procesos.</p><span class="apunte__autor">8</span>
+        <p class="apunte__texto">Apunte sobre automatización de procesos para reducir tareas repetitivas, mejorar tiempos de respuesta y minimizar errores humanos.</p><span class="apunte__autor">8</span>
         <section class="comentario">
-          <p class="comentario__texto">Útil para entender procesos automatizados.</p><span
+          <p class="comentario__texto">Útil para entender procesos automatizados y ver cómo se pueden reducir tareas repetitivas dentro de una organización.</p><span
             class="comentario__valoracion">5</span><span class="comentario__autor">paula09</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-27 10:00:00</span>
         <h2 class="apunte__titulo">Apps móviles</h2>
-        <p class="apunte__texto">Desarrollo.</p><span class="apunte__autor">9</span>
+        <p class="apunte__texto">Introducción al desarrollo de aplicaciones móviles, repasando tipos de apps, diseño de pantallas y necesidades del usuario final.</p><span class="apunte__autor">9</span>
         <section class="comentario">
-          <p class="comentario__texto">Está bien como introducción al desarrollo móvil.</p><span
+          <p class="comentario__texto">Está bien como introducción al desarrollo móvil, aunque ganaría mucho con una comparación entre aplicaciones nativas y web.</p><span
             class="comentario__valoracion">3</span><span class="comentario__autor">ander10</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-27 11:00:00</span>
         <h2 class="apunte__titulo">UX/UI</h2>
-        <p class="apunte__texto">Experiencia usuario.</p><span class="apunte__autor">10</span>
+        <p class="apunte__texto">Resumen de UX/UI para diseñar interfaces claras, accesibles y fáciles de usar, cuidando navegación, jerarquía visual y consistencia.</p><span class="apunte__autor">10</span>
         <section class="comentario">
-          <p class="comentario__texto">Muy práctico para recordar experiencia de usuario.</p><span
+          <p class="comentario__texto">Muy práctico para recordar experiencia de usuario; ayuda a pensar en pantallas claras, navegación sencilla y necesidades reales del usuario.</p><span
             class="comentario__valoracion">5</span><span class="comentario__autor">leire11</span>
         </section>
       </article>

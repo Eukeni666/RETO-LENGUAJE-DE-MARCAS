@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">WikiApuntes</title>
+
+  <g stroke="#9E9D99" stroke-opacity="0.3" fill="none">
+    <path d="M75 50H425" />
+    <path d="M75 80H425" />
+    <path d="M75 110H425" />
+    <path d="M75 140H425" />
+    <path d="M75 170H425" />
+    <path d="M75 200H425" />
+    <path d="M75 230H425" />
+    <path d="M75 260H425" />
+    <path d="M75 290H425" />
+    <path d="M75 320H425" />
+    <path d="M75 350H425" />
+    <path d="M75 380H425" />
+    <path d="M75 410H425" />
+    <path d="M75 440H425" />
+  </g>
+
+  <path d="M135 50V440" stroke="#374151" stroke-opacity="0.5" fill="none" />
+
+  <g fill="#374151">
+    <path d="M25 50L75 350H125L75 50Z" />
+    <path d="M75 350L125 250H175L125 350Z" />
+    <path d="M125 250L175 350H225L175 250Z" />
+    <path d="M175 350H225L325 50H275Z" />
+    <path d="M240 310H370L350 290H220Z" />
+
+    <path d="M337 50A26 26 0 0 0 285 50Z" />
+    <path d="M285 53L300 100L350 82L334 37Z" />
+    <path d="M302 103L390 360L440 345L350 86Z" />
+    <path d="M393 363L433 419L443 415L440 349Z" />
+    <path d="M435 421L446 440L443 418Z" />
+  </g>
+</svg>

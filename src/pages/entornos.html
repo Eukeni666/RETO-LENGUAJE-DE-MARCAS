@@ -9,13 +9,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/index.css">
   <link rel="stylesheet" href="../styles/entornos.css">
+  <script type="module" src="/lib/mis-apuntes.js"></script>
   <title>WikiApuntes</title>
 </head>
 
 <body>
   <header class="contenedor">
     <div class="barra-superior">
-      <a class="marca" href="/index.html">WikiApuntes</a>
+      <a class="marca" href="/index.html" aria-label="WikiApuntes">
+        <img class="marca__logo" src="/logo.svg" alt="WikiApuntes">
+      </a>
 
       <div class="bloque-navegacion">
         <nav aria-label="Navegación principal">
@@ -34,7 +37,14 @@
                 <li><a href="/src/pages/sostenibilidad.html">Sostenibilidad</a></li>
               </ul>
             </li>
-            <li><a href="/index.html">Mis apuntes</a></li>
+            <li><a href="/index.html" data-filtro-mis-apuntes>Mis apuntes</a></li>
+            <li class="perfil-usuario">
+              <a class="perfil-usuario__enlace" href="/index.html" aria-label="Perfil de usuario">
+                <img class="perfil-usuario__imagen"
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=160&amp;q=80"
+                  alt="Perfil de usuario">
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -45,16 +55,13 @@
       <div class="contenido-portada">
         <div class="texto-portada">
           <h1 id="titulo-asignatura">Entornos de Desarrollo</h1>
-          <p class="curso">D.A.M. 1</p>
         </div>
 
         <div class="descripcion-portada">
           <p>
-            At MindMarket, we help you uncover the insights that matter most — no matter
-            your industry. With deep experience across a wide range of sectors, we
-            understand the unique challenges and nuances each market brings. Whether
-            you're short on time, resources, or local context, we act as your research
-            partner offering practical, cost-effective solutions tailored to your goals.
+            Entornos de Desarrollo reúne las herramientas que acompañan al programador:
+            IDEs, Git, control de versiones, depuración y trabajo con proyectos. La meta
+            es crear un flujo de trabajo ordenado, colaborativo y fácil de mantener.
           </p>
         </div>
       </div>
@@ -64,81 +71,81 @@
     <section class="apuntes-grid">
       <article class="apunte"><span class="apunte__fecha">2026-03-11 10:00:00</span>
         <h2 class="apunte__titulo">Git básico</h2>
-        <p class="apunte__texto">Comandos.</p><span class="apunte__autor">1</span>
+        <p class="apunte__texto">Comandos básicos de Git para iniciar repositorios, revisar cambios, guardar versiones y consultar el historial del proyecto.</p><span class="apunte__autor">1</span>
         <section class="comentario">
-          <p class="comentario__texto"></p><span class="comentario__valoracion"></span><span
+          <p class="comentario__texto">Buen punto de partida para recordar los comandos básicos de Git y entender cómo se guarda el historial del proyecto.</p><span class="comentario__valoracion"></span><span
             class="comentario__autor"></span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-11 11:00:00</span>
         <h2 class="apunte__titulo">Branches</h2>
-        <p class="apunte__texto">Ramas.</p><span class="apunte__autor">2</span>
+        <p class="apunte__texto">Uso de ramas para desarrollar funcionalidades por separado, probar cambios y mantener el código principal más estable.</p><span class="apunte__autor">2</span>
         <section class="comentario">
-          <p class="comentario__texto"></p><span class="comentario__valoracion"></span><span
+          <p class="comentario__texto">La explicación de ramas ayuda a trabajar sin mezclar cambios, algo muy útil cuando varias personas avanzan en paralelo.</p><span class="comentario__valoracion"></span><span
             class="comentario__autor"></span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-11 12:00:00</span>
         <h2 class="apunte__titulo">Merge</h2>
-        <p class="apunte__texto">Fusión.</p><span class="apunte__autor">3</span>
+        <p class="apunte__texto">Explicación del merge para unir ramas, revisar conflictos y comprender cómo Git combina cambios de diferentes líneas de trabajo.</p><span class="apunte__autor">3</span>
         <section class="comentario">
-          <p class="comentario__texto"></p><span class="comentario__valoracion"></span><span
+          <p class="comentario__texto">Sirve para entender la fusión de cambios y por qué conviene revisar conflictos antes de integrar el trabajo de otros.</p><span class="comentario__valoracion"></span><span
             class="comentario__autor"></span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-12 10:00:00</span>
         <h2 class="apunte__titulo">IDE</h2>
-        <p class="apunte__texto">Uso básico.</p><span class="apunte__autor">4</span>
+        <p class="apunte__texto">Uso básico del IDE para crear proyectos, navegar archivos, ejecutar código y aprovechar herramientas de productividad del entorno.</p><span class="apunte__autor">4</span>
         <section class="comentario">
-          <p class="comentario__texto">Fácil de entender.</p><span class="comentario__valoracion">4</span><span
+          <p class="comentario__texto">Fácil de entender y útil para configurar mejor el IDE, aprovechando atajos, extensiones y herramientas que aceleran el desarrollo.</p><span class="comentario__valoracion">4</span><span
             class="comentario__autor">naiara07</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-12 11:00:00</span>
         <h2 class="apunte__titulo">Debugging</h2>
-        <p class="apunte__texto">Depuración.</p><span class="apunte__autor">5</span>
+        <p class="apunte__texto">Técnicas de depuración con puntos de ruptura, inspección de variables y ejecución paso a paso para localizar errores.</p><span class="apunte__autor">5</span>
         <section class="comentario">
-          <p class="comentario__texto"></p><span class="comentario__valoracion"></span><span
+          <p class="comentario__texto">Buen apunte para practicar depuración, porque recuerda la importancia de usar puntos de ruptura y observar variables paso a paso.</p><span class="comentario__valoracion"></span><span
             class="comentario__autor"></span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-12 12:00:00</span>
         <h2 class="apunte__titulo">Logs</h2>
-        <p class="apunte__texto">Errores.</p><span class="apunte__autor">6</span>
+        <p class="apunte__texto">Uso de logs para registrar eventos, entender errores, seguir el comportamiento del programa y facilitar el mantenimiento.</p><span class="apunte__autor">6</span>
         <section class="comentario">
-          <p class="comentario__texto"></p><span class="comentario__valoracion"></span><span
+          <p class="comentario__texto">Me parece útil para entender los logs como una forma de investigar errores sin depender solo de mensajes en pantalla.</p><span class="comentario__valoracion"></span><span
             class="comentario__autor"></span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-13 10:00:00</span>
         <h2 class="apunte__titulo">Maven</h2>
-        <p class="apunte__texto">Dependencias.</p><span class="apunte__autor">7</span>
+        <p class="apunte__texto">Gestión de dependencias con Maven, estructura del proyecto, archivo pom y comandos habituales para compilar y probar.</p><span class="apunte__autor">7</span>
         <section class="comentario">
-          <p class="comentario__texto"></p><span class="comentario__valoracion"></span><span
+          <p class="comentario__texto">Aclara bien cómo Maven organiza dependencias y tareas del proyecto, algo clave para compilar sin configurar todo manualmente.</p><span class="comentario__valoracion"></span><span
             class="comentario__autor"></span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-13 11:00:00</span>
         <h2 class="apunte__titulo">Testing</h2>
-        <p class="apunte__texto">Tipos.</p><span class="apunte__autor">8</span>
+        <p class="apunte__texto">Tipos de pruebas en desarrollo, incluyendo unitarias, integración y funcionales para comprobar que el software funciona correctamente.</p><span class="apunte__autor">8</span>
         <section class="comentario">
-          <p class="comentario__texto"></p><span class="comentario__valoracion"></span><span
+          <p class="comentario__texto">Buen resumen para distinguir tipos de pruebas y entender por qué probar el código evita fallos antes de entregar.</p><span class="comentario__valoracion"></span><span
             class="comentario__autor"></span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-13 12:00:00</span>
         <h2 class="apunte__titulo">Refactorización</h2>
-        <p class="apunte__texto">Código limpio.</p><span class="apunte__autor">9</span>
+        <p class="apunte__texto">Refactorización orientada a código limpio, mejorando nombres, estructura y duplicaciones sin modificar el comportamiento externo.</p><span class="apunte__autor">9</span>
         <section class="comentario">
-          <p class="comentario__texto"></p><span class="comentario__valoracion"></span><span
+          <p class="comentario__texto">Explica la refactorización como una mejora del código sin cambiar su comportamiento, algo importante para mantener proyectos limpios.</p><span class="comentario__valoracion"></span><span
             class="comentario__autor"></span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-14 10:00:00</span>
         <h2 class="apunte__titulo">CI/CD</h2>
-        <p class="apunte__texto">Automatización.</p><span class="apunte__autor">10</span>
+        <p class="apunte__texto">Introducción a CI/CD para automatizar pruebas, construcción y despliegues, manteniendo un flujo de trabajo más fiable.</p><span class="apunte__autor">10</span>
         <section class="comentario">
-          <p class="comentario__texto"></p><span class="comentario__valoracion"></span><span
+          <p class="comentario__texto">Buen cierre para entender CI/CD, ya que muestra cómo automatizar pruebas y despliegues mejora la calidad del flujo de trabajo.</p><span class="comentario__valoracion"></span><span
             class="comentario__autor"></span>
         </section>
       </article>

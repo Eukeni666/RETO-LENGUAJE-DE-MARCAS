@@ -9,13 +9,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/index.css">
   <link rel="stylesheet" href="../styles/baseDeDatos.css">
+  <script type="module" src="/lib/mis-apuntes.js"></script>
   <title>WikiApuntes</title>
 </head>
 
 <body>
   <header class="contenedor">
     <div class="barra-superior">
-      <a class="marca" href="/index.html">WikiApuntes</a>
+      <a class="marca" href="/index.html" aria-label="WikiApuntes">
+        <img class="marca__logo" src="/logo.svg" alt="WikiApuntes">
+      </a>
 
       <div class="bloque-navegacion">
         <nav aria-label="Navegación principal">
@@ -34,7 +37,14 @@
                 <li><a href="/src/pages/sostenibilidad.html">Sostenibilidad</a></li>
               </ul>
             </li>
-            <li><a href="/index.html">Mis apuntes</a></li>
+            <li><a href="/index.html" data-filtro-mis-apuntes>Mis apuntes</a></li>
+            <li class="perfil-usuario">
+              <a class="perfil-usuario__enlace" href="/index.html" aria-label="Perfil de usuario">
+                <img class="perfil-usuario__imagen"
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=160&amp;q=80"
+                  alt="Perfil de usuario">
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -45,16 +55,13 @@
       <div class="contenido-portada">
         <div class="texto-portada">
           <h1 id="titulo-asignatura">Bases de Datos</h1>
-          <p class="curso">D.A.M. 1</p>
         </div>
 
         <div class="descripcion-portada">
           <p>
-            At MindMarket, we help you uncover the insights that matter most — no matter
-            your industry. With deep experience across a wide range of sectors, we
-            understand the unique challenges and nuances each market brings. Whether
-            you're short on time, resources, or local context, we act as your research
-            partner offering practical, cost-effective solutions tailored to your goals.
+            En Bases de Datos se trabaja la forma de organizar, relacionar y consultar
+            información de manera estructurada. Aprenderás modelo relacional, claves,
+            normalización y SQL para crear consultas útiles y mantener datos coherentes.
           </p>
         </div>
       </div>
@@ -64,83 +71,80 @@
     <section class="apuntes-grid">
       <article class="apunte"><span class="apunte__fecha">2026-03-01 10:00:00</span>
         <h2 class="apunte__titulo">Modelo relacional</h2>
-        <p class="apunte__texto">Conceptos básicos del modelo relacional.</p><span class="apunte__autor">1</span>
+        <p class="apunte__texto">Conceptos básicos del modelo relacional, explicando tablas, registros, campos y cómo organizar la información para evitar duplicidades.</p><span class="apunte__autor">1</span>
         <section class="comentario">
-          <p class="comentario__texto">Muy claro.</p><span class="comentario__valoracion">5</span><span
+          <p class="comentario__texto">Muy claro para introducir el modelo relacional; ayuda a ver cómo las tablas, filas y columnas representan información organizada.</p><span class="comentario__valoracion">5</span><span
             class="comentario__autor">laura02</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-01 11:00:00</span>
         <h2 class="apunte__titulo">Claves primarias</h2>
-        <p class="apunte__texto">Definición y ejemplos.</p><span class="apunte__autor">2</span>
+        <p class="apunte__texto">Definición de claves primarias con ejemplos sencillos para identificar cada fila de una tabla de forma única y estable.</p><span class="apunte__autor">2</span>
         <section class="comentario">
-          <p class="comentario__texto">Buen apunte para repasar claves primarias.</p><span
+          <p class="comentario__texto">Buen apunte para repasar claves primarias, especialmente porque remarca su papel al identificar registros sin repetir datos.</p><span
             class="comentario__valoracion">4</span><span class="comentario__autor">markel03</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-01 12:00:00</span>
         <h2 class="apunte__titulo">Claves foráneas</h2>
-        <p class="apunte__texto">Relaciones entre tablas.</p><span class="apunte__autor">3</span>
+        <p class="apunte__texto">Relaciones entre tablas mediante claves foráneas, mostrando cómo conectar entidades y mantener la coherencia de los datos.</p><span class="apunte__autor">3</span>
         <section class="comentario">
-          <p class="comentario__texto">Relaciones entre tablas explicadas de forma clara.</p><span
+          <p class="comentario__texto">Las relaciones entre tablas quedan explicadas de forma clara y ayudan a entender cómo se conectan los datos entre entidades.</p><span
             class="comentario__valoracion">4</span><span class="comentario__autor">ane04</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-02 10:00:00</span>
         <h2 class="apunte__titulo">Normalización</h2>
-        <p class="apunte__texto">1FN, 2FN, 3FN.</p><span class="apunte__autor">4</span>
+        <p class="apunte__texto">Repaso de primera, segunda y tercera forma normal para reducir redundancias y mejorar el diseño de bases de datos relacionales.</p><span class="apunte__autor">4</span>
         <section class="comentario">
-          <p class="comentario__texto">Útil para entender las formas normales.</p><span
+          <p class="comentario__texto">Útil para entender las formas normales; el contenido permite detectar redundancias y pensar mejor el diseño de una base de datos.</p><span
             class="comentario__valoracion">5</span><span class="comentario__autor">jon05</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-02 11:00:00</span>
         <h2 class="apunte__titulo">SELECT básico</h2>
-        <p class="apunte__texto">Consultas simples.</p><span class="apunte__autor">5</span>
+        <p class="apunte__texto">Consultas simples con SELECT, columnas, filtros básicos y ordenación para obtener la información necesaria de una tabla.</p><span class="apunte__autor">5</span>
         <section class="comentario">
-          <p class="comentario__texto">Muy útil para repasar antes del examen.</p><span
+          <p class="comentario__texto">Muy útil para repasar antes del examen, porque resume las consultas simples y deja una base clara para practicar filtros.</p><span
             class="comentario__valoracion">5</span><span class="comentario__autor">unai08</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-02 12:00:00</span>
         <h2 class="apunte__titulo">JOINs</h2>
-        <p class="apunte__texto">INNER y LEFT JOIN.</p><span class="apunte__autor">6</span>
+        <p class="apunte__texto">Diferencias entre INNER JOIN y LEFT JOIN para combinar tablas y entender qué registros aparecen en cada resultado.</p><span class="apunte__autor">6</span>
         <section class="comentario">
-          <p class="comentario__texto">Muy completo, me ha servido para aclarar dudas que tenía desde clase.</p><span
+          <p class="comentario__texto">Muy completo; me ha servido para aclarar dudas de clase y diferenciar mejor cuándo usar INNER JOIN o LEFT JOIN.</p><span
             class="comentario__valoracion">5</span><span class="comentario__autor">laura02</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-03 10:00:00</span>
         <h2 class="apunte__titulo">Subconsultas</h2>
-        <p class="apunte__texto">Uso práctico.</p><span class="apunte__autor">7</span>
+        <p class="apunte__texto">Uso práctico de subconsultas para resolver búsquedas más complejas, comparando resultados internos con la consulta principal.</p><span class="apunte__autor">7</span>
         <section class="comentario">
-          <p class="comentario__texto">Excelente explicación, muy bien estructurada y con ejemplos que ayudan bastante a
-            entenderlo todo paso a paso.</p><span class="comentario__valoracion">5</span><span
+          <p class="comentario__texto">Excelente explicación, bien estructurada y con ejemplos que ayudan a entender paso a paso cómo una consulta puede depender de otra.</p><span class="comentario__valoracion">5</span><span
             class="comentario__autor">ander10</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-03 11:00:00</span>
         <h2 class="apunte__titulo">Índices</h2>
-        <p class="apunte__texto">Optimización.</p><span class="apunte__autor">8</span>
+        <p class="apunte__texto">Introducción a los índices como herramienta de optimización para acelerar búsquedas, ordenar datos y mejorar consultas frecuentes.</p><span class="apunte__autor">8</span>
         <section class="comentario">
-          <p class="comentario__texto">Está bastante bien pero añadiría más ejemplos prácticos para que se entienda
-            mejor.
-          </p><span class="comentario__valoracion">4</span><span class="comentario__autor">iker01</span>
+          <p class="comentario__texto">Está bastante bien, aunque añadiría más ejemplos prácticos para ver cómo los índices mejoran el rendimiento en consultas reales.</p><span class="comentario__valoracion">4</span><span class="comentario__autor">iker01</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-03 12:00:00</span>
         <h2 class="apunte__titulo">Triggers</h2>
-        <p class="apunte__texto">Automatización.</p><span class="apunte__autor">9</span>
+        <p class="apunte__texto">Explicación de triggers como acciones automáticas que se ejecutan al insertar, actualizar o borrar datos en una tabla.</p><span class="apunte__autor">9</span>
         <section class="comentario">
-          <p class="comentario__texto">No me ha quedado claro.</p><span class="comentario__valoracion">2</span><span
+          <p class="comentario__texto">No me ha quedado del todo claro; sería útil añadir un ejemplo completo donde se vea cuándo se ejecuta el trigger.</p><span class="comentario__valoracion">2</span><span
             class="comentario__autor">paula09</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-04 10:00:00</span>
         <h2 class="apunte__titulo">Funciones SQL</h2>
-        <p class="apunte__texto">COUNT y AVG.</p><span class="apunte__autor">10</span>
+        <p class="apunte__texto">Resumen de funciones SQL como COUNT, AVG, SUM, MIN y MAX para calcular valores agregados sobre conjuntos de registros.</p><span class="apunte__autor">10</span>
         <section class="comentario">
-          <p class="comentario__texto">Buen resumen de funciones agregadas.</p><span
+          <p class="comentario__texto">Buen resumen de funciones agregadas; ayuda a recordar cómo COUNT, AVG o SUM pueden resumir información de varias filas.</p><span
             class="comentario__valoracion">4</span><span class="comentario__autor">gorka12</span>
         </section>
       </article>

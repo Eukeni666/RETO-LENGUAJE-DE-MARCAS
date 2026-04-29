@@ -9,13 +9,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/index.css">
   <link rel="stylesheet" href="../styles/ingles.css">
+  <script type="module" src="/lib/mis-apuntes.js"></script>
   <title>WikiApuntes</title>
 </head>
 
 <body>
   <header class="contenedor">
     <div class="barra-superior">
-      <a class="marca" href="/index.html">WikiApuntes</a>
+      <a class="marca" href="/index.html" aria-label="WikiApuntes">
+        <img class="marca__logo" src="/logo.svg" alt="WikiApuntes">
+      </a>
 
       <div class="bloque-navegacion">
         <nav aria-label="Navegación principal">
@@ -34,27 +37,31 @@
                 <li><a href="/src/pages/sostenibilidad.html">Sostenibilidad</a></li>
               </ul>
             </li>
+            <li><a href="/index.html" data-filtro-mis-apuntes>Mis apuntes</a></li>
+            <li class="perfil-usuario">
+              <a class="perfil-usuario__enlace" href="/index.html" aria-label="Perfil de usuario">
+                <img class="perfil-usuario__imagen"
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=160&amp;q=80"
+                  alt="Perfil de usuario">
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
     </div>
-    <div class="acceso-sesion">Iniciar sesión</div>
   </header>
   <section class="pagina-asignatura">
     <div class="portada-asignatura" aria-labelledby="titulo-asignatura">
       <div class="contenido-portada">
         <div class="texto-portada">
           <h1 id="titulo-asignatura">Inglés</h1>
-          <p class="curso">D.A.M. 1</p>
         </div>
 
         <div class="descripcion-portada">
           <p>
-            At MindMarket, we help you uncover the insights that matter most — no matter
-            your industry. With deep experience across a wide range of sectors, we
-            understand the unique challenges and nuances each market brings. Whether
-            you're short on time, resources, or local context, we act as your research
-            partner offering practical, cost-effective solutions tailored to your goals.
+            Inglés refuerza la comunicación en contextos técnicos y profesionales.
+            Trabajarás vocabulario, comprensión de textos, redacción y conversaciones
+            útiles para desenvolverte mejor en documentación, equipos y entrevistas.
           </p>
         </div>
       </div>
@@ -64,81 +71,81 @@
     <section class="apuntes-grid">
       <article class="apunte"><span class="apunte__fecha">2026-03-14 11:00:00</span>
         <h2 class="apunte__titulo">Present simple</h2>
-        <p class="apunte__texto">Uso básico del presente.</p><span class="apunte__autor">1</span>
+        <p class="apunte__texto">Uso básico del presente simple para hablar de rutinas, hechos generales, horarios y acciones habituales en inglés.</p><span class="apunte__autor">1</span>
         <section class="comentario">
-          <p class="comentario__texto">Muy claro para repasar el presente simple.</p><span
+          <p class="comentario__texto">Muy claro para repasar el presente simple, con una explicación que ayuda a distinguir hábitos, rutinas y hechos generales.</p><span
             class="comentario__valoracion">5</span><span class="comentario__autor">laura02</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-14 12:00:00</span>
         <h2 class="apunte__titulo">Past simple</h2>
-        <p class="apunte__texto">Pasado simple.</p><span class="apunte__autor">2</span>
+        <p class="apunte__texto">Repaso del pasado simple con verbos regulares e irregulares, frases afirmativas, negativas y preguntas sobre acciones terminadas.</p><span class="apunte__autor">2</span>
         <section class="comentario">
-          <p class="comentario__texto">Buen resumen del pasado simple.</p><span
+          <p class="comentario__texto">Buen resumen del pasado simple; facilita recordar verbos regulares e irregulares antes de practicar frases completas.</p><span
             class="comentario__valoracion">4</span><span class="comentario__autor">markel03</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-15 10:00:00</span>
         <h2 class="apunte__titulo">Vocabulary IT</h2>
-        <p class="apunte__texto">Términos técnicos.</p><span class="apunte__autor">3</span>
+        <p class="apunte__texto">Vocabulario técnico de informática para comprender documentación, herramientas, componentes, acciones frecuentes y conversaciones profesionales.</p><span class="apunte__autor">3</span>
         <section class="comentario">
-          <p class="comentario__texto">Vocabulario técnico muy útil para clase.</p><span
+          <p class="comentario__texto">Vocabulario técnico muy útil para clase, especialmente para entender documentación, mensajes de error y conversaciones sobre tecnología.</p><span
             class="comentario__valoracion">5</span><span class="comentario__autor">ane04</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-15 11:00:00</span>
         <h2 class="apunte__titulo">Emails formales</h2>
-        <p class="apunte__texto">Cómo escribir emails.</p><span class="apunte__autor">4</span>
+        <p class="apunte__texto">Guía para escribir emails formales con saludo, motivo del mensaje, desarrollo claro, despedida y tono adecuado.</p><span class="apunte__autor">4</span>
         <section class="comentario">
-          <p class="comentario__texto">Me ayuda a estructurar mejor los emails.</p><span
+          <p class="comentario__texto">Me ayuda a estructurar mejor los emails, cuidando saludos, tono profesional y cierre según el contexto de comunicación.</p><span
             class="comentario__valoracion">5</span><span class="comentario__autor">jon05</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-15 12:00:00</span>
         <h2 class="apunte__titulo">Listening</h2>
-        <p class="apunte__texto">Ejercicios.</p><span class="apunte__autor">5</span>
+        <p class="apunte__texto">Ejercicios de listening para entrenar oído, identificar ideas principales, reconocer palabras clave y mejorar la comprensión oral.</p><span class="apunte__autor">5</span>
         <section class="comentario">
-          <p class="comentario__texto">Ejercicios prácticos para mejorar la escucha.</p><span
+          <p class="comentario__texto">Ejercicios prácticos para mejorar la escucha; estaría bien repetirlos con distintos acentos para ganar más seguridad.</p><span
             class="comentario__valoracion">4</span><span class="comentario__autor">mikel06</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-16 10:00:00</span>
         <h2 class="apunte__titulo">Speaking</h2>
-        <p class="apunte__texto">Conversación.</p><span class="apunte__autor">6</span>
+        <p class="apunte__texto">Práctica de speaking con expresiones útiles para presentarse, pedir aclaraciones, dar opiniones y mantener conversaciones sencillas.</p><span class="apunte__autor">6</span>
         <section class="comentario">
-          <p class="comentario__texto">Buen apunte para practicar conversación.</p><span
+          <p class="comentario__texto">Buen apunte para practicar conversación, porque propone expresiones sencillas que sirven para participar con más naturalidad en clase.</p><span
             class="comentario__valoracion">4</span><span class="comentario__autor">naiara07</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-16 11:00:00</span>
         <h2 class="apunte__titulo">Reading</h2>
-        <p class="apunte__texto">Comprensión.</p><span class="apunte__autor">7</span>
+        <p class="apunte__texto">Estrategias de reading para comprender textos, detectar ideas principales, localizar información específica y deducir significado por contexto.</p><span class="apunte__autor">7</span>
         <section class="comentario">
-          <p class="comentario__texto">Contenido claro para trabajar comprensión lectora.</p><span
+          <p class="comentario__texto">Contenido claro para trabajar comprensión lectora y aprender a localizar ideas principales sin traducir palabra por palabra.</p><span
             class="comentario__valoracion">5</span><span class="comentario__autor">unai08</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-16 12:00:00</span>
         <h2 class="apunte__titulo">Writing</h2>
-        <p class="apunte__texto">Redacción.</p><span class="apunte__autor">8</span>
+        <p class="apunte__texto">Consejos de writing para organizar párrafos, conectar ideas, revisar gramática y escribir textos más claros en inglés.</p><span class="apunte__autor">8</span>
         <section class="comentario">
-          <p class="comentario__texto">Muy práctico para mejorar la redacción.</p><span
+          <p class="comentario__texto">Muy práctico para mejorar la redacción, sobre todo al ordenar párrafos y conectar ideas con expresiones adecuadas.</p><span
             class="comentario__valoracion">5</span><span class="comentario__autor">paula09</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-17 10:00:00</span>
         <h2 class="apunte__titulo">Conditionals</h2>
-        <p class="apunte__texto">If clauses.</p><span class="apunte__autor">9</span>
+        <p class="apunte__texto">Explicación de conditionals e if clauses para expresar condiciones reales, posibles, hipotéticas y consecuencias según el caso.</p><span class="apunte__autor">9</span>
         <section class="comentario">
-          <p class="comentario__texto">Explica bien las if clauses.</p><span
+          <p class="comentario__texto">Explica bien las if clauses y ayuda a diferenciar condiciones reales, hipotéticas y situaciones que dependen de otra acción.</p><span
             class="comentario__valoracion">4</span><span class="comentario__autor">ander10</span>
         </section>
       </article>
       <article class="apunte"><span class="apunte__fecha">2026-03-17 11:00:00</span>
         <h2 class="apunte__titulo">Future</h2>
-        <p class="apunte__texto">Futuro.</p><span class="apunte__autor">10</span>
+        <p class="apunte__texto">Formas de futuro en inglés con will, going to y presente continuo, diferenciando predicciones, planes e intenciones.</p><span class="apunte__autor">10</span>
         <section class="comentario">
-          <p class="comentario__texto">Buen repaso de las formas de futuro.</p><span
+          <p class="comentario__texto">Buen repaso de las formas de futuro; aclara cuándo usar will, going to y presente continuo según la intención.</p><span
             class="comentario__valoracion">4</span><span class="comentario__autor">leire11</span>
         </section>
       </article>

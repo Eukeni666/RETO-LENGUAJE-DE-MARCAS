@@ -9,7 +9,7 @@
   --color-borde-suave: #d1d5db;
   --color-principal: #111111;
   --color-portada: #1a1a1a;
-  --color-texto-cuerpo: #1b1b1b;
+  --color-texto-cuerpo: #f8fafc;
   --color-borde-imagen: rgba(23, 23, 23, 0.22);
   --color-fondo-imagen: rgba(255, 255, 255, 0.35);
   --color-texto-imagen: rgba(23, 23, 23, 0.6);
@@ -77,12 +77,16 @@ a {
 }
 
 .marca {
-  font-family: var(--fuente-titulos);
-  font-weight: 700;
-  color: var(--color-marca);
-  text-decoration: none;
-  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
   margin-right: 12px;
+}
+
+.marca__logo {
+  width: 3.25rem;
+  height: 3.25rem;
+  object-fit: contain;
 }
 
 .bloque-navegacion {
@@ -121,6 +125,34 @@ nav button:hover {
   background: var(--color-fondo-hover);
 }
 
+.nav__enlace--activo {
+  background: var(--color-fondo-hover);
+  color: var(--color-principal);
+}
+
+.perfil-usuario {
+  margin-left: 0.45rem;
+}
+
+.perfil-usuario__enlace {
+  width: 2.15rem;
+  height: 2.15rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.perfil-usuario__imagen {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-superficie);
+}
+
 .menu-desplegable {
   display: none;
   position: absolute;
@@ -148,7 +180,13 @@ nav button:hover {
 
 .pagina-asignatura {
   width: 90vw;
+  min-height: 75vh;
   margin: 0 auto;
+}
+
+main {
+  background: #fff;
+  padding: 4rem 1.5rem 5rem;
 }
 
 .portada-asignatura {
@@ -189,6 +227,100 @@ nav button:hover {
   color: var(--color-texto-cuerpo);
 }
 
+.apuntes-grid {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.25rem;
+}
+
+.apunte {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  color: var(--color-principal);
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 14px 30px rgba(17, 24, 39, 0.08);
+}
+
+.apunte__fecha {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.apunte__titulo {
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+
+.apunte__texto {
+  line-height: 1.45;
+  color: #374151;
+}
+
+.apunte__autor {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.apunte__autor::before {
+  content: "Autor: ";
+  font-weight: 700;
+  color: var(--color-principal);
+}
+
+.comentario {
+  margin-top: auto;
+  padding: 0.9rem;
+  background: #f9fafb;
+  border-left: 3px solid #d1d5db;
+  border-radius: 6px;
+  color: #374151;
+}
+
+.comentario__texto {
+  margin-bottom: 0.65rem;
+  line-height: 1.4;
+}
+
+.comentario__valoracion,
+.comentario__autor {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.8rem;
+  font-size: 0.86rem;
+  color: #4b5563;
+}
+
+.comentario__valoracion::before {
+  content: "Valoracion:";
+  margin-right: 0.2rem;
+  font-weight: 700;
+  color: var(--color-principal);
+}
+
+.comentario__autor::before {
+  content: "Comentario:";
+  margin-right: 0.2rem;
+  font-weight: 700;
+  color: var(--color-principal);
+}
+
+.apunte,
+.comentario {
+  overflow-wrap: anywhere;
+}
+
+.apunte[hidden] {
+  display: none;
+}
+
 
 @media (max-width: 1180px) {
   .descripcion-portada {
@@ -224,5 +356,13 @@ nav button:hover {
 
   .descripcion-portada p {
     line-height: 1.3;
+  }
+
+  main {
+    padding: 3rem 1rem 4rem;
+  }
+
+  .apuntes-grid {
+    grid-template-columns: 1fr;
   }
 }
